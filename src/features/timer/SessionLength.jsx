@@ -7,20 +7,27 @@ const SessionLength = () => {
 
   return (
     <div>
-      <h1 id="session-label">Session Length</h1>
-      <h1 id="session-length">{length}</h1>
-      <button
-        id="session-increment"
-        onClick={() => dispatch(setSessionLength(length + 1))}
-      >
-        Increase
-      </button>
-      <button
-        id="session-decrement"
-        onClick={() => dispatch(setSessionLength(length - 1))}
-      >
-        Decrease
-      </button>
+      <h2 id="session-label" className="session-label">
+        Session Length
+      </h2>
+
+      <div className="session-controls">
+        <button
+          id="session-increment"
+          className="control-button"
+          onClick={() => dispatch(setSessionLength(length + 1))}
+        >
+          +
+        </button>
+        <h2 id="session-length">{length}</h2>
+        <button
+          id="session-decrement"
+          className="control-button"
+          onClick={() => dispatch(setSessionLength(length - 1))}
+        >
+          -
+        </button>
+      </div>
     </div>
   );
 };

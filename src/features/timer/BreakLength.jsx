@@ -6,21 +6,27 @@ const BreakLength = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <h1 id="break-label">Break Length</h1>
-      <h1 id="break-length">{length}</h1>
-      <button
-        id="break-increment"
-        onClick={() => dispatch(setBreakLength(length + 1))}
-      >
-        Increase
-      </button>
-      <button
-        id="break-decrement"
-        onClick={() => dispatch(setBreakLength(length - 1))}
-      >
-        Decrease
-      </button>
+    <div className="break">
+      <h2 id="break-label" className="break-label">
+        Break Length
+      </h2>
+      <div className="break-controls">
+        <button
+          id="break-increment"
+          className="control-button"
+          onClick={() => dispatch(setBreakLength(length + 1))}
+        >
+          +
+        </button>
+        <h2 id="break-length">{length}</h2>
+        <button
+          id="break-decrement"
+          className="control-button"
+          onClick={() => dispatch(setBreakLength(length - 1))}
+        >
+          -
+        </button>
+      </div>
     </div>
   );
 };

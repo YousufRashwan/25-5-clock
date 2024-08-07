@@ -4,12 +4,14 @@ import BreakLength from "./features/timer/BreakLength";
 
 const App = () => {
   return (
-    <div>
-      <h1>25 + 5 Clock</h1>
-      <BreakLength />
-      <SessionLength />
+    <main>
+      <h1 className="heading">25 + 5 Clock</h1>
+      <div className="length-control">
+        <BreakLength />
+        <SessionLength />
+      </div>
       <Timer />
-    </div>
+    </main>
   );
 };
 
