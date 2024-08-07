@@ -1,3 +1,7 @@
+// "homepage": "https://yousufrashwan.github.io/25-5-clock",
+// "predeploy": "npm run build",
+//     "deploy": "gh-pages -d dist",
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
