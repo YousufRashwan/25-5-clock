@@ -6,11 +6,11 @@ const App = () => {
   return (
     <main>
       <h1 className="heading">25 + 5 Clock</h1>
+      <Timer />
       <div className="length-control">
         <BreakLength />
         <SessionLength />
       </div>
-      <Timer />
     </main>
   );
 };
